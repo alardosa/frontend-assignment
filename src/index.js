@@ -6,3 +6,4 @@ new Vue({
   render: createElement => createElement(HelloWorld),
   el: '#app'
 });
+//comment
