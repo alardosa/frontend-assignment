@@ -1,0 +1,83 @@
+.Card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: $white;
+  border: 1px solid $grey-light;
+  margin-bottom: 1.5em;
+  border-radius: $border-radius;
+  &:last-child {
+    margin-bottom: 0;
+  }
+  &__Title {
+    color: #505050;
+    text-transform: uppercase;
+    font-variant: small-caps;
+    font-weight: bold;
+    padding: 1em;
+    font-size: 0.8em;
+    border-bottom: 1px solid $grey-light;
+  }
+  &__Content {
+    padding: 1em;
+    &__List {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+    &--spend-history {
+      display: block;
+      margin: 1em auto 0 auto;
+      max-width: 350px;
+      width: 100%;
+      height: calc(350px * 0.34375);
+      content: '';
+      background: url('~Images/graph.png') no-repeat top center;
+      background-size: contain;
+      box-sizing: border-box;
+    }
+    &__Item {
+      display: flex;
+      align-items: center;
+      padding: 0.5em 1em;
+      &--separated {
+        margin-left: -1em;
+        margin-right: -1em;
+        border-bottom: 1px solid $grey-light;
+      }
+      &:first-child {
+        padding-top: 0;
+      }
+      &:last-child {
+        padding-bottom: 0;
+        border-bottom: 0;
+      }
+      // .Company__Logo {
+      //   flex: 1;
+      // }
+    }
+    &__timePassed {
+      width: 40%;
+      color: $grey;
+    }
+    &__type {
+      margin: 0 1em;
+      &Image {
+        display: block;
+        width: 24px;
+        height: 24px;
+      }
+    }
+    &__Message {
+      width: 100%;
+      padding: 1em 0;
+      &:first-child,
+      &:last-child {
+        padding: 0.5em 0;
+      }
+      &__Title {
+        display: block;
+      }
+    }
+  }
+}

@@ -1,0 +1,9 @@
+.Pagegrid {
+  display: flex;
+}
+.Pageview {
+  display: flex;
+  max-width: 80vw;
+  width: 100%;
+  flex-direction: column;
+}

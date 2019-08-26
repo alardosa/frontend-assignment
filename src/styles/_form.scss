@@ -1,0 +1,66 @@
+.Form {
+  &__Group {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1em;
+  }
+  &__Label {
+    color: $grey;
+    font-variant: small-caps;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+  }
+  &__Input {
+    color: $grey;
+    padding: 0.75em 1em;
+    width: 50%;
+    border: 1px solid $grey-light;
+    border-radius: $border-radius;
+    box-sizing: border-box;
+    box-shadow: 0 0 0.25rem 0.15rem rgba(0, 0, 0, 0.05);
+    &:focus {
+      outline: none;
+      border-color: $blue;
+    }
+    &::placeholder {
+      color: $grey-light;
+    }
+    &--textarea {
+      width: 100%;
+      resize: none;
+    }
+    &--error {
+      border: 1px solid rgb(245, 81, 81);
+      box-shadow: 0 0 0.25rem 0.15rem rgba(245, 81, 81, 0.05);
+      &:focus {
+        border-color: rgb(245, 81, 81);
+      }
+    }
+  }
+  &__Error {
+    width: 50%;
+    margin: 0.5em 0;
+    padding: 1em;
+    box-sizing: border-box;
+    font-size: 0.8em;
+    color: rgb(245, 81, 81);
+    border-left: 4px solid rgb(245, 81, 81);
+    background: rgba(245, 81, 81, 0.1);
+  }
+  &__Button {
+    display: block;
+    padding: .5em 1.5em;
+    text-transform: uppercase;
+    color: white;
+    background: $blue-ligth;
+    border-radius: $border-radius;
+    border: 1px solid $blue-ligth;
+    font-size: .9em;
+    &--right {
+      margin-left: auto;
+    }
+  }
+}
